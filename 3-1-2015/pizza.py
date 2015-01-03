@@ -1,3 +1,4 @@
+# -*- coding;UTF-8 -*-
 from dicionarios import *
 def inferir(nome_pizza):
 	#if nome_pizza == 'Marguerita':
