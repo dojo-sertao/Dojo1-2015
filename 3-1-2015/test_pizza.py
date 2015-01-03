@@ -13,8 +13,13 @@ class Test_pizza(unittest.TestCase):
 		self.maxDiff = None
 		self.assertEqual(inferir('Quatro_queijos'),["Renato", "Lenon", "Renata", "Luca", "Tino"])
 
+	def test_se_pizza_Escarola(self):
+		self.maxDiff = None
+		self.assertEqual(inferir('Escarola'),["Renato", "Luca"])
+
+	def test_se_pizza_Portuguesa(self):
+		self.maxDiff = None
+		self.assertEqual(inferir('Portuguesa'),["Renato", "Luca", "Marcelo", "Washington", "Tino"])
+
 if __name__ == "__main__":
-
 	unittest.main()
-
-
