@@ -6,12 +6,15 @@ from dicionarios import *
 class Test_pizza(unittest.TestCase):
 
 	def test_se_pizza_margerita(self):
-		self.assertEqual(inferir('Marguerita'),[Renato, Lenon, Renata, Luca])	
+		self.maxDiff = None
+		self.assertEqual(inferir('Marguerita'),["Renato", "Lenon", "Renata", "Luca"])	
 
 	def test_se_pizza_4queijos(self):
-		self.assertEqual(inferir('Quatro_queijos'),[Renato, Lenon, Renata, Tino, Luca])
+		self.maxDiff = None
+		self.assertEqual(inferir('Quatro_queijos'),["Renato", "Lenon", "Renata", "Luca", "Tino"])
 
 if __name__ == "__main__":
+
 	unittest.main()
 
 

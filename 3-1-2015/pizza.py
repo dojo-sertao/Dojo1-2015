@@ -7,5 +7,5 @@ def inferir(nome_pizza):
 	result = []
 	for pessoa in pessoas: 
 		if pessoa[nome_pizza]>=3:
-			result.append(pessoa)
+			result.append(pessoa["nome"])
 	return result
